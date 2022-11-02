@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="image/dogpng.png" class="logo"></a>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Menu</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textnote">
+              <h2>I am not just a Dog<br>I am <span> Family</span></h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates tenetur aperiam magni nisi tempore voluptatibus nulla quos nobis ipsam aspernatur, rem sit repudiandae ullam sed non. Facere sit dolore quibusdam!</p> 
+              <a href="#">Adopt Me</a> 
+            </div>
+            <div class="imgBox">
+                <img src="./image/dog11.png" class="doghood">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./image/dog22.png" onclick="imgSlider('./image/dog11.png');changeCircleColor('#09051C')"></li>
+            <li><img src="./image/dog33.png" onclick="imgSlider('./image/dog22.png');changeCircleColor('#548C0B')"></li>
+            <li><img src="./image/dog44.png" onclick="imgSlider('./image/dog33.png');changeCircleColor('#19B359')"></li>
+        </ul>
+        
+        <ul class="contact">
+            <li><a href=""><img src="./image/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="./image/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="./image/whatsapp.png" alt=""></a></li>
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.doghood').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+
+        
+    </script>
+</body>
+</html>
+ 
